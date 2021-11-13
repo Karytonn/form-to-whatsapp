@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form to WhatsApp</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="flex items-center justify-center h-screen">
+        <div class="w-96 bg-sky-900 p-4 m-4 rounded-md">
+
+          <h1 class="text-gray-50 text-2xl font-bold mb-4">Sendo messege with WhatsApp</h1>
+
+          <form class="relative pb-16">
+            <label class="block mb-1 font-light text-gray-50" for="fname">Name</label>
+            <input class="w-full p-1 rounded" type="text" name="fname" id="fname" placeholder="Algusto Lima" />
+      
+            <label class="block mb-1 mt-4 font-light text-gray-50" for="fmail">Email</label>
+            <input class="w-full p-1 rounded" type="email" name="fmail" id="fmail" placeholder="algustolima@mail.com" />
+      
+            <label class="block mb-1 mt-4 font-light text-gray-50" for="fcity">City</label>
+            <input class="w-full p-1 rounded" type="text" name="fcity" id="fname" placeholder="New York" />
+      
+            <label class="block mb-1 mt-4 font-light text-gray-50" for="fmessage">Your messege</label>
+            <textarea class="p-1 w-full rounded" name="fmessage" id="fmessage" rows="5" placeholder="Text to send whit WhatsApp"></textarea>
+      
+            <button id="send" class="block absolute right-0 py-2 px-4 mt-4 mb-4 rounded-md tex- bg-white text-sky-900 font-bold">Send messege</button>
+          </form>
+        </div>
+      </div>
+    
+</body>
+</html>
+
+
+    const name = document.querySelector("#fname")
+    const email = document.querySelector("#fmail")
+    const city = document.querySelector("#fcity")
+    const message = document.querySelector("#fmessage")
