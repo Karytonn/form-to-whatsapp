@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form to WhatsApp</title>
 
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="app.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form to WhatsApp</title>
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="flex items-center justify-center h-screen">
-        <div class="w-96 bg-sky-900 p-4 m-4 rounded-md">
+  <div class="flex items-center justify-center h-screen">
+    <div class="w-96 bg-sky-900 p-4 m-4 rounded-md">
 
-          <h1 class="text-gray-50 text-2xl font-bold mb-4">Sendo messege with WhatsApp</h1>
+      <h1 class="text-gray-50 text-2xl font-bold mb-4">Sendo messege with WhatsApp</h1>
 
-          <form class="relative pb-16">
-            <label class="block mb-1 font-light text-gray-50" for="fname">Name</label>
-            <input class="w-full p-1 rounded" type="text" name="fname" id="fname" required placeholder="Algusto Lima" />
-      
-            <label class="block mb-1 mt-4 font-light text-gray-50" for="fmail">Email</label>
-            <input class="w-full p-1 rounded" type="email" name="fmail" id="fmail" required placeholder="algustolima@mail.com" />
-      
-            <label class="block mb-1 mt-4 font-light text-gray-50" for="fcity">City</label>
-            <input class="w-full p-1 rounded" type="text" name="fcity" id="fname" required placeholder="New York" />
-      
-            <label class="block mb-1 mt-4 font-light text-gray-50" for="fmessage">Your messege</label>
-            <textarea class="p-2 w-full rounded" name="fmessage" id="fmessage" required rows="5" placeholder="Text to send whit WhatsApp"></textarea>
-      
-            <button id="send" class="block absolute right-0 py-2 px-4 mt-4 mb-4 rounded-md tex- bg-white text-sky-900 font-bold">Send messege</button>
-          </form>
-        </div>
-      </div>
-    
+      <form class="relative pb-16">
+        <label class="block mb-1 font-light text-gray-50" for="fname">Name</label>
+        <input class="w-full p-1 rounded" type="text" name="fname" id="fname" required placeholder="Algusto Lima" />
+
+        <label class="block mb-1 mt-4 font-light text-gray-50" for="fmail">Email</label>
+        <input class="w-full p-1 rounded" type="email" name="fmail" id="fmail" required
+          placeholder="algustolima@mail.com" />
+
+        <label class="block mb-1 mt-4 font-light text-gray-50" for="fcity">City</label>
+        <input class="w-full p-1 rounded" type="text" name="fcity" id="fcity" required placeholder="New York" />
+
+        <label class="block mb-1 mt-4 font-light text-gray-50" for="fmessage">Your messege</label>
+        <textarea class="p-2 w-full rounded" name="fmessage" id="fmessage" required rows="5"
+          placeholder="Text to send whit WhatsApp"></textarea>
+
+        <button id="send"
+          class="block absolute right-0 py-2 px-4 mt-4 mb-4 rounded-md tex- bg-white text-sky-900 font-bold">Send
+          messege</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
 </body>
+
 </html>
